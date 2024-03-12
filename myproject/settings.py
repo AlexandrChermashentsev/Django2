@@ -27,7 +27,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
-    'AlexCherm.pythonanywhere.com',
+    'AlexCherm2.pythonanywhere.com',
 ]
 
 
