@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Client
+{% endblock %}
+
+{% block content %}
+<a href="javascript:history. back()">back</a>
+<h1>Клиент {{ client.name }}</h1>
+<p>Phone_number {{ client.phone_number }}</p>
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Orders
+{% endblock %}
+
+{% block content %}
+<a href="javascript:history. back()">back</a>
+<h1>Заказы клиента {{ client.name }}</h1>
+<ul>
+    {% for order in orders %}
+        <p>Наименование продукта {{ order.product.name_product }}</p>
+        <p>Сумма заказа {{ order.total_amount }} руб.</p>
+        <p>Дата заказа {{ order.order_date }}</p>
+    {% endfor %}
+</ul>
+{% endblock %}
